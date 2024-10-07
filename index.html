@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>LB</title>
+</head>
+
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <img src="img/logo.png" alt="Logo" class="logo"  width="60" height="auto">>                    <nav id="nav">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/luisbascurv" target="_blank" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Luis Bascur</span>, técnico informático</h2>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, </p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Luis Bascur</span></h2>
+            <h3>Técnico en Ciberseguridad</h3>
+            <p>Soy Luis Bascur, técnico informático especializado en ciberseguridad. Mi pasión es proteger sistemas y datos, asegurando la integridad y confidencialidad de la información. Con experiencia en diversas herramientas y técnicas, busco constantemente mejorar mis habilidades para enfrentar los desafíos del mundo digital.</p>
+            <a href="cv-luis-bascur.pdf" download>Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- SECCION CONTACTO -->
+<section id="contacto">
+    <h3 class="titulo-seccion">Contactar ahora</h3>
+    <div class="contenedor">
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+        
+        <!-- Mapa -->
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.8046848271665!2d-71.55085088891647!3d-33.00892447345731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689ddc274293141%3A0x9641abdaace2877d!2sMall%20Marina!5e0!3m2!1ses-419!2scl!4v1728258197307!5m2!1ses-419!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+
